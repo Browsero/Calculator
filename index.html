@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js" defer></script>
+    <title>Calculator</title>
+  </head>
+  <body class="flex flex-col items-center justify-around h-full">
+    <div
+      id="calculator"
+      class="bg-zinc-300 max-w-xs mx-auto mt-16 p-8 rounded-lg flex flex-col gap-4 mb-16 md:max-w-md"
+    >
+      <div
+        id="screen"
+        class="bg-zinc-100 p-4 flex flex-col items-end border-4 border-zinc-400 rounded-lg"
+      >
+        <p id="equation" class="font-normal text-2xl"></p>
+        <p id="result" class="font-medium text-4xl">0</p>
+      </div>
+      <div class="grid grid-cols-4 gap-4">
+        <button
+          class="bg-zinc-100 p-4 rounded-xl font-medium text-xl border-2 border-zinc-400 transition hover:scale-110"
+          data-number
+        >
+          7
+        </button>
+        <button
+          class="bg-zinc-100 p-4 rounded-xl font-medium text-xl border-2 border-zinc-400 transition hover:scale-110"
+          data-number
+        >
+          8
+        </button>
+        <button
+          class="bg-zinc-100 p-4 rounded-xl font-medium text-xl border-2 border-zinc-400 transition hover:scale-110"
+          data-number
+        >
+          9
+        </button>
+        <button
+          class="bg-zinc-100 p-4 rounded-xl font-medium text-xl border-2 border-zinc-400 transition hover:scale-110"
+          data-operator
+        >
+          ÷
+        </button>
+        <button
+          class="bg-zinc-100 p-4 rounded-xl font-medium text-xl border-2 border-zinc-400 transition hover:scale-110"
+          data-number
+        >
+          4
+        </button>
+        <button
+          class="bg-zinc-100 p-4 rounded-xl font-medium text-xl border-2 border-zinc-400 transition hover:scale-110"
+          data-number
+        >
+          5
+        </button>
+        <button
+          class="bg-zinc-100 p-4 rounded-xl font-medium text-xl border-2 border-zinc-400 transition hover:scale-110"
+          data-number
+        >
+          6
+        </button>
+        <button
+          class="bg-zinc-100 p-4 rounded-xl font-medium text-xl border-2 border-zinc-400 transition hover:scale-110"
+          data-operator
+        >
+          ×
+        </button>
+        <button
+          class="bg-zinc-100 p-4 rounded-xl font-medium text-xl border-2 border-zinc-400 transition hover:scale-110"
+          data-number
+        >
+          1
+        </button>
+        <button
+          class="bg-zinc-100 p-4 rounded-xl font-medium text-xl border-2 border-zinc-400 transition hover:scale-110"
+          data-number
+        >
+          2
+        </button>
+        <button
+          class="bg-zinc-100 p-4 rounded-xl font-medium text-xl border-2 border-zinc-400 transition hover:scale-110"
+          data-number
+        >
+          3
+        </button>
+        <button
+          class="bg-zinc-100 p-4 rounded-xl font-medium text-xl border-2 border-zinc-400 transition hover:scale-110"
+          data-operator
+        >
+          -
+        </button>
+        <button
+          id="point"
+          class="bg-zinc-100 p-4 rounded-xl font-medium text-xl border-2 border-zinc-400 transition hover:scale-110"
+        >
+          .
+        </button>
+        <button
+          class="bg-zinc-100 p-4 rounded-xl font-medium text-xl border-2 border-zinc-400 transition hover:scale-110"
+          data-number
+        >
+          0
+        </button>
+        <button
+          id="equals"
+          class="bg-zinc-100 p-4 rounded-xl font-medium text-xl border-2 border-zinc-400 transition hover:scale-110"
+          data-operator
+        >
+          =
+        </button>
+        <button
+          class="bg-zinc-100 p-4 rounded-xl font-medium text-xl border-2 border-zinc-400 transition hover:scale-110"
+          data-operator
+        >
+          +
+        </button>
+      </div>
+      <div class="flex flex-row justify-around gap-4">
+        <button
+          id="delete"
+          class="p-4 bg-red-300 w-48 font-bold rounded-lg text-zinc-700 transition hover:bg-red-400"
+        >
+          DELETE
+        </button>
+        <button
+          id="clear"
+          class="p-4 bg-yellow-300 w-48 font-bold rounded-lg text-zinc-600 transition hover:bg-yellow-400"
+        >
+          CLEAR
+        </button>
+      </div>
+    </div>
+    <div class="flex p-8 w-full justify-center gap-8">
+      <p class="font-semibold">Hubert Madej</p>
+      <a href="https://github.com/Browsero"
+        ><img alt="github-logo" src="./iconmonstr-github-1.svg"
+      /></a>
+    </div>
+  </body>
+</html>
